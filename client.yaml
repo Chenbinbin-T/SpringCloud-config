@@ -1,17 +1,35 @@
 spring:
     profiles:
-        active:
+        active: dev
 
 ---
 
+server:
+    8201
+#spring的配置
 spring:
     profiles: dev
     application:
-        name: springcloud-config-dev
-        
+        name: springcloud-provider-dept
+
+# EUREKA的配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7002/eureka/,http://localhost:7003/eureka/,http://localhost:7004/eureka/
+
 ---
 
+server:
+    8202
+#spring的配置
 spring:
     profiles: test
     application:
-        name: springcloud-config-test
+        name: springcloud-provider-dept
+
+# EUREKA的配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7002/eureka/,http://localhost:7003/eureka/,http://localhost:7004/eureka/
