@@ -11,8 +11,6 @@ spring:
   freemarker:
     prefer-file-system-access: false
   profiles: dev
-  application:
-    name: springcloud-config-eureka
 
 # Eureka的配置
 eureka:
@@ -35,9 +33,6 @@ spring:
   freemarker:
     prefer-file-system-access: false
   profiles: test
-  application:
-    name: springcloud-config-eureka
-
 # Eureka的配置
 eureka:
   instance:
