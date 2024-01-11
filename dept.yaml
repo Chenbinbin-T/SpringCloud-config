@@ -43,7 +43,7 @@ management:
     health:
       show-details: always #获得健康检查中所有指标的详细信息
 
-----
+---
 
 server:
   port: 8002
